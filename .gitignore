@@ -34,3 +34,7 @@ Thumbs.db
 
 /db.sqlite3
 /JobInsight/__pycache__/
+
+# Data
+*.json
+*.sqlite3*

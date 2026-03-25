@@ -1,6 +1,42 @@
-# JobInsightVisualizer
-채용 공고를 크롤링한 데이터로 만들어보는 시각화 웹 서비스 
+<!--
+---
+name: Job Trend Visualizer
+date: 2024-09-30
+tags: [python, django, redshift, sql]
+summary: Analyzes job market data to extract structured insights on hiring trends, role distributions, and required skill sets.
+---
+-->
 
-# 버전
-- Python 3.12.7
-- Django 5.1.2
+# Job Trend Visualizer
+
+Analyzes job market data to extract structured insights on hiring trends, role distributions, and required skill sets.
+
+### Overview
+It serves as an introductory implementation of a data pipeline, providing practical experience with data collection, transformation, and analysis workflows, while laying the groundwork for more advanced concepts such as orchestration, data warehouses, and data lakes.
+
+### What It Does
+- Collects job posting data and organizes it into analyzable datasets
+- Aggregates postings by role and region to identify distribution patterns
+- Computes the ratio of entry-level vs. experienced positions across regions
+- Extracts and categorizes technology stacks associated with different job types
+- Performs relational analysis on:
+  - Programming languages and job categories
+  - Co-occurrence patterns between technologies
+- Produces structured outputs suitable for visualization and further analysis
+
+### Architecture
+![Architecture](./arch_ai.jpg)
+
+### Modeling
+- Structured tables
+    ![Structured](./structured_tables.jpg)
+- Denormalized tables
+    ![Denormalized](./denormalized_tables.jpg)
+
+### The Dashboard
+![Dashboard](./a1_dash.jpg)
+
+### Dependencies
+- `Python 3.12.7`
+- `Django 5.1.2`
+- See `requirements.txt`
